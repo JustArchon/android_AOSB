@@ -1,50 +1,39 @@
-CyanogenMod
-===========
+ProBAM MANIFEST
 
-Submitting Patches
-------------------
-Patches are always welcome!  Please submit your patches via CyanogenMod Gerrit!
-You can do this by using these commands:
+```
+mkdir ~probam
+cd ~probam
+From your probam directory, execute the following to pull all source code from github:
 
-    (From root android directory)
-    . build/envsetup.sh
-    (Go to repo you are patching, make your changes and commit)
-    cmgerrit <for(new)/changes(patch set)> <branch/change-id> 
+repo init -u https://github.com/ProBAMKK/android.git -b cm-11.0
+```    
+Modify your `.repo/local_manifest.xml` as follows (Note2 example):
 
-    repo start cm-11.0 .
-    (Make your changes and commit)
-    repo upload .
-Note: "." meaning current directory
-For more help on using this tool, use this command: repo help upload
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="ProBAMKK/android_device_samsung_n7100" path="device/samsung/n7100" remote="github" />
+  <project name="ProBAMKK/android_device_samsung_t0lte" path="device/samsung/t0lte" remote="github" />  
+  <project name="CyanogenMod/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
+  <project name="CyanogenMod/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
+  <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
+  <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
+</manifest>
+```
 
-Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
 
-To view the status of your and others' patches, visit [CyanogenMod Code Review](http://review.cyanogenmod.org/)
+```
+repo sync
+vendor/cm/get-prebuilts
+```
 
+Building Instructions
+=======================
+```
 
-Getting Started
----------------
-
-To get started with Android/CyanogenMod, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
-
-To initialize your local repository using the CyanogenMod trees, use a command like this:
-
-    repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0
-
-Then to sync up:
-
-    repo sync
-
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
-
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
-
-Buildbot
---------
-
-All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [CyanogenMod Jenkins](http://jenkins.cyanogenmod.org/)
+source build/envsetup.sh
+make clean
+breakfast n7100
+brunch n7100
+```
+=======
