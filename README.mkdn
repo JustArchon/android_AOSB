@@ -5,7 +5,7 @@ mkdir ~probam
 cd ~probam
 From your probam directory, execute the following to pull all source code from github:
 
-repo init -u https://github.com/ProBAMKK/android.git -b cm-11.0
+repo init -u https://github.com/ProBAMKK/android.git -b master
 ```    
 Modify your `.repo/local_manifest.xml` as follows (Note2 example):
 
@@ -15,7 +15,7 @@ Modify your `.repo/local_manifest.xml` as follows (Note2 example):
   <project name="ProBAMKK/android_device_samsung_n7100" path="device/samsung/n7100" remote="github" />
   <project name="ProBAMKK/android_device_samsung_t0lte" path="device/samsung/t0lte" remote="github" />  
   <project name="CyanogenMod/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
-  <project name="CyanogenMod/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
+  <project name="ProBAMKK/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
   <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
 </manifest>
@@ -32,7 +32,6 @@ Building Instructions
 ```
 
 source build/envsetup.sh
-make clean
 breakfast n7100
 brunch n7100
 ```
