@@ -330,6 +330,7 @@
   <project path="libcore" name="CyanogenMod/android_libcore" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
+  <project path="packages/apps/ProbamUpdater" name="AOSB/android_packages_apps_ProbamUpdater" revision="master" />
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="AOSB/android_packages_apps_Bluetooth" revision="master" />
@@ -342,7 +343,6 @@
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" />
-  <project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
   <project path="packages/apps/CMWallpapers" name="AOSB/android_packages_apps_CMWallpapers" revision="master" />
   <project path="packages/apps/Contacts" name="AOSB/android_packages_apps_Contacts" revision="master" />
   <project path="packages/apps/ContactsCommon" name="AOSB/android_packages_apps_ContactsCommon" revision="master" />
