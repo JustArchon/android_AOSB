@@ -349,6 +349,7 @@
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
   <project path="packages/apps/Dialer" name="AOSB/android_packages_apps_Dialer" revision="dialer" />
   <project path="packages/apps/DSPManager" name="AOSB/android_packages_apps_DSPManager" revision="master" />
+  <project path="packages/apps/PerformanceControl" name="omnirom/android_packages_apps_PerformanceControl" remote="github" revision="android-4.4" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
   <project path="packages/apps/Gallery2" name="AOSB/android_packages_apps_Gallery2" revision="master" />
