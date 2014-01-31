@@ -21,6 +21,9 @@
            fetch="https://github.com/ChameleonOS"
            review="review.chameleonos.org" />
 
+  <remote  name="AOSB"
+           fetch="https://github.com/AOSB" />
+
   <project path="build" name="CyanogenMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -274,7 +277,7 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
   <project path="frameworks/av" name="AOSB/android_frameworks_av" revision="master" />
-  <project path="frameworks/base" name="AOSB/android_frameworks_base" revision="bam-1.2.6"  />
+  <project path="frameworks/base" name="android_frameworks_base" remote="AOSB" revision="aosb-1.2.8"  />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
