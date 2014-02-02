@@ -337,6 +337,7 @@
   <project path="libcore" name="CyanogenMod/android_libcore" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
+  <project path="packages/apps/OmniSwitch" name="maxwen/android_packages_apps_OmniSwitch" revision="android-4.4" />
   <project path="packages/apps/ProbamUpdater" name="AOSB/android_packages_apps_ProbamUpdater" revision="master" />
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" />
