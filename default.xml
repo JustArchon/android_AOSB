@@ -24,7 +24,7 @@
   <remote  name="AOSB"
            fetch="https://github.com/AOSB" />
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
+  <project path="build" name="AOSB/android_build" remote="AOSB" revision="android-4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
