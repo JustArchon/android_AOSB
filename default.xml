@@ -24,14 +24,14 @@
   <remote  name="AOSB"
            fetch="https://github.com/AOSB" />
 
-  <project path="build" name="AOSB/android_build" remote="AOSB" revision="android-4.4" >
+  <project path="build" name="android_build" remote="AOSB" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="AOSB/android" remote="github" revision="master" />
+  <project path="android" name="android" remote="AOSB" revision="master" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" />
-  <project path="bionic" name="AOSB/android_bionic" revision="master" />
+  <project path="bionic" name="android_bionic" remote="AOSB" revision="master" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="cts" />
@@ -276,7 +276,7 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
-  <project path="frameworks/av" name="AOSB/android_frameworks_av" revision="master" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="AOSB" revision="master" />
   <project path="frameworks/base" name="android_frameworks_base" remote="AOSB" revision="aosb-1.2.8"  />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
@@ -284,7 +284,7 @@
   <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" />
   <project path="frameworks/mff" name="CyanogenMod/android_frameworks_mff" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
-  <project path="frameworks/native" name="AOSB/android_frameworks_native" revision="master" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="AOSB" revision="master" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
   <project path="frameworks/opt/carddav" name="CyanogenMod/android_frameworks_opt_carddav" />
   <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
@@ -338,42 +338,42 @@
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="packages/apps/OmniSwitch" name="maxwen/android_packages_apps_OmniSwitch" revision="android-4.4" />
-  <project path="packages/apps/ProbamUpdater" name="AOSB/android_packages_apps_ProbamUpdater" revision="master" />
+  <project path="packages/apps/ProbamUpdater" name="android_packages_apps_ProbamUpdater" remote="AOSB" revision="master" />
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" />
-  <project path="packages/apps/Bluetooth" name="AOSB/android_packages_apps_Bluetooth" revision="master" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="AOSB" revision="master" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" />
-  <project path="packages/apps/Browser" name="AOSB/android_packages_apps_Browser" revision="master" />
+  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="AOSB" revision="master" />
   <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
   <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" />
-  <project path="packages/apps/Camera2" name="AOSB/android_packages_apps_Camera2" revision="master" />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="AOSB" revision="master" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" />
-  <project path="packages/apps/CMWallpapers" name="AOSB/android_packages_apps_CMWallpapers" revision="master" />
-  <project path="packages/apps/Contacts" name="AOSB/android_packages_apps_Contacts" revision="master" />
-  <project path="packages/apps/ContactsCommon" name="AOSB/android_packages_apps_ContactsCommon" revision="master" />
+  <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers" remote="AOSB" revision="master" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="AOSB" revision="master" />
+  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="AOSB" revision="master" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
-  <project path="packages/apps/Dialer" name="AOSB/android_packages_apps_Dialer" revision="dialer" />
-  <project path="packages/apps/DSPManager" name="AOSB/android_packages_apps_DSPManager" revision="master" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="AOSB" revision="dialer" />
+  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="AOSB" revision="master" />
   <project path="packages/apps/PerformanceControl" name="omnirom/android_packages_apps_PerformanceControl" remote="github" revision="android-4.4" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
-  <project path="packages/apps/Gallery2" name="AOSB/android_packages_apps_Gallery2" revision="master" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="AOSB" revision="master" />
   <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
-  <project path="packages/apps/InCallUI" name="AOSB/android_packages_apps_InCallUI" revision="master" />
+  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="AOSB" revision="master" />
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
   <project path="packages/apps/Launcher3" name="CyanogenMod/android_packages_apps_Launcher3" />
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" />
-  <project path="packages/apps/Mms" name="AOSB/android_packages_apps_Mms" revision="master" />
+  <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="AOSB" revision="master" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
   <project path="packages/apps/QuickSearchBox" name="CyanogenMod/android_packages_apps_QuickSearchBox" />
-  <project path="packages/apps/Settings" name="AOSB/android_packages_apps_Settings" remote="github" revision="master"  />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="AOSB" revision="master"  />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
@@ -385,21 +385,21 @@
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" />
   <project path="packages/apps/VoicePlus" name="CyanogenMod/android_packages_apps_VoicePlus" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
-  <project path="packages/inputmethods/LatinIME" name="AOSB/android_packages_inputmethods_LatinIME" remote="github" revision="master" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="AOSB" revision="master" />
   <project path="packages/inputmethods/OpenWnn" name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
   <project path="packages/inputmethods/PinyinIME" name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
   <project path="packages/providers/ApplicationsProvider" name="CyanogenMod/android_packages_providers_ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="CyanogenMod/android_packages_providers_CalendarProvider" />
-  <project path="packages/providers/ContactsProvider" name="AOSB/android_packages_providers_ContactsProvider" revision="master" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="AOSB" revision="master" />
   <project path="packages/providers/DownloadProvider" name="CyanogenMod/android_packages_providers_DownloadProvider" />
-  <project path="packages/providers/MediaProvider" name="AOSB/android_packages_providers_MediaProvider" remote="github" revision="master" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="AOSB" revision="master" />
   <project path="packages/providers/PartnerBookmarksProvider" name="CyanogenMod/android_packages_providers_PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="CyanogenMod/android_packages_providers_UserDictionaryProvider" />
   <project path="packages/screensavers/Basic" name="CyanogenMod/android_packages_screensavers_Basic" />
   <project path="packages/screensavers/PhotoTable" name="CyanogenMod/android_packages_screensavers_PhotoTable" />
   <project path="packages/screensavers/WebView" name="CyanogenMod/android_packages_screensavers_WebView" />
-  <project path="packages/services/Telephony" name="AOSB/android_packages_services_Telephony" remote="github" revision="master" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="AOSB" revision="master" />
   <project path="packages/wallpapers/Basic" name="CyanogenMod/android_packages_wallpapers_Basic" />
   <project path="packages/wallpapers/Galaxy4" name="CyanogenMod/android_packages_wallpapers_Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="CyanogenMod/android_packages_wallpapers_HoloSpiral" />
@@ -456,9 +456,9 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk,tools" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
-  <project path="system/core" name="AOSB/android_system_core" revision="master" />
+  <project path="system/core" name="android_system_core" remote="AOSB" revision="master" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
-  <project path="system/media" name="AOSB/android_system_media" revision="master" />
+  <project path="system/media" name="android_system_media" remote="AOSB" revision="master" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
@@ -473,7 +473,7 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="vendor/cm" name="AOSB/android_vendor_cm" remote="github" revision="vendor"  />
+  <project path="vendor/cm" name="android_vendor_cm" remote="AOSB" revision="vendor"  />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
