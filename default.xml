@@ -9,8 +9,8 @@
            fetch=".."
            review="review.cyanogenmod.org" />
 
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
+  <remote name="private" 
+          fetch="ssh://git@bitbucket.org/aosb" />
 
   <default revision="refs/heads/cm-11.0"
            remote="github"
@@ -33,7 +33,7 @@
   <project path="android" name="android" remote="AOSB" revision="master" />
   <project path="bionic" name="android_bionic" remote="AOSB" revision="master" />
   <project path="frameworks/av" name="android_frameworks_av" remote="AOSB" revision="master" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="AOSB" revision="aosb-1.3.0"  />
+  <project path="frameworks/base" name="android_frameworks_base" remote="private" revision="aosb-1.3.0"  />
   <project path="frameworks/native" name="android_frameworks_native" remote="AOSB" revision="master" />
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="AOSB" revision="master" />
   <project path="packages/apps/ProbamUpdater" name="android_packages_apps_ProbamUpdater" remote="AOSB" revision="master" />
