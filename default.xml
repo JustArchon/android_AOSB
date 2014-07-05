@@ -59,6 +59,7 @@
   <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="AOSB" revision="master" />
   <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="AOSB" revision="master" />
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="AOSB" revision="master" />
+  <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="AOSB" revision="master" />
   <!-- Android Open Source Blitz End -->
 
   <!-- AOSP Start -->
