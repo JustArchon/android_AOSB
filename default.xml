@@ -496,6 +496,7 @@
   <project path="packages/wallpapers/MusicVisualization" name="CyanogenMod/android_packages_wallpapers_MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="CyanogenMod/android_packages_wallpapers_NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="CyanogenMod/android_packages_wallpapers_PhaseBeam" />
+  <project path="packages/wallpapers/PhotoPhase" name="CyanogenMod/android_packages_wallpapers_PhotoPhase" />
   <project path="prebuilt" name="CyanogenMod/android_prebuilt" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
