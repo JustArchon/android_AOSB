@@ -22,7 +22,8 @@
            review="review.chameleonos.org" />
 
   <remote  name="AOSB"
-           fetch="https://github.com/AOSB" />
+           fetch="https://github.com/AOSB" 
+           review="review.probam.net:8081/" />
 
 
   <!-- Android Open Source Blitz Start -->
