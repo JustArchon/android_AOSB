@@ -5,7 +5,7 @@ mkdir ~probam
 cd ~probam
 From your probam directory, execute the following to pull all source code from github:
 
-repo init -u https://github.com/AOSB/android.git
+repo init -u https://github.com/AOSB/android.git -b kitkat
 ```    
 Modify your `.repo/local_manifest.xml` as follows (Note2 example):
 

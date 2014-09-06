@@ -25,40 +25,40 @@
            sync-j="4" />
 
   <!-- Android Open Source Blitz Start -->
-  <project path="build" name="android_build" remote="aosb" revision="master" >
+  <project path="build" name="android_build" remote="aosb" revision="kitkat" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="android" remote="aosb" revision="master" />
-  <project path="bionic" name="android_bionic" remote="aosb" revision="master" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="aosb" revision="master" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="aosb" revision="android-4.4"  />
-  <project path="frameworks/native" name="android_frameworks_native" remote="aosb" revision="master" />
-  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="aosb" revision="master" />
-  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="aosb" revision="master" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="aosb" revision="master" />
-  <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers" remote="aosb" revision="master" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="aosb" revision="master" />
-  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="aosb" revision="master" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="aosb" revision="master" />
-  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="aosb" revision="master" />
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="aosb" revision="master" />
-  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="aosb" revision="master" />
-  <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="aosb" revision="master" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aosb" revision="master"  />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="aosb" revision="master" />
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="aosb" revision="master" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="aosb" revision="master"/>
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="aosb" revision="master" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="aosb" revision="master" />
-  <project path="system/core" name="android_system_core" remote="aosb" revision="master" />
-  <project path="system/media" name="android_system_media" remote="aosb" revision="master" />
+  <project path="android" name="android" remote="aosb" revision="kitkat" />
+  <project path="bionic" name="android_bionic" remote="aosb" revision="kitkat" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="aosb" revision="kitkat" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="aosb" revision="kitkat"  />
+  <project path="frameworks/native" name="android_frameworks_native" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aosb" revision="kitkat"  />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="aosb" revision="kitkat" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="aosb" revision="kitkat" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="aosb" revision="kitkat"/>
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="aosb" revision="kitkat" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="aosb" revision="kitkat" />
+  <project path="system/core" name="android_system_core" remote="aosb" revision="kitkat" />
+  <project path="system/media" name="android_system_media" remote="aosb" revision="kitkat" />
   <project path="vendor/cm" name="android_vendor_cm" remote="aosb" revision="vendor"  />
-  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="aosb" revision="master" />
-  <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="aosb" revision="master" />
-  <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="aosb" revision="master" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="aosb" revision="master" />
-  <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="aosb" revision="master" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="aosb" revision="kitkat" />
+  <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="aosb" revision="kitkat" />
   <project path="packages/apps/EOSWeather" name="android_packages_apps_EOSWeather" remote="aosb" revision="kk4.4" />
   <!-- Android Open Source Blitz End -->
 
