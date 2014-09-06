@@ -6,11 +6,8 @@
            review="android-review.googlesource.com" />
 
   <remote  name="aosb"
-           fetch="https://github.com/AOSB" />
-
-  <remote  name="ChameleonOS"
-           fetch="https://github.com/ChameleonOS"
-           review="review.chameleonos.org" />
+           fetch="https://github.com/AOSB" 
+           review="review.probam.net" />
 
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod"
@@ -186,7 +183,7 @@
   <!-- AOSP End -->
 
   <!-- ChameleonOS Start -->
-  <project path="packages/apps/ScreenRecorder" name="android_packages_apps_ScreenRecorder" remote="ChameleonOS" revision="kitkat" />
+  <project path="packages/apps/ScreenRecorder" name="ChameleonOS/android_packages_apps_ScreenRecorder" remote="github" revision="kitkat" />
   <!-- ChameleonOS End -->
 
   <!-- CyanogenMod Start -->
