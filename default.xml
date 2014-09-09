@@ -24,7 +24,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <!-- Android Open Source Blitz Start -->
+  <!-- Android Open Source BAM Start -->
   <project path="build" name="android_build" remote="aosb" revision="kitkat" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -60,7 +60,7 @@
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="aosb" revision="kitkat" />
   <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="aosb" revision="kitkat" />
   <project path="packages/apps/EOSWeather" name="android_packages_apps_EOSWeather" remote="aosb" revision="kk4.4" />
-  <!-- Android Open Source Blitz End -->
+  <!-- Android Open Source BAM End -->
 
   <!-- AOSP Start -->
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" groups="cts" />
