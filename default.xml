@@ -35,7 +35,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="android" remote="aosb" revision="kitkat" />
+  <project path="android" name="android" remote="aosb" revision="kitkat-staging" />
   <project path="bionic" name="android_bionic" remote="aosb" revision="kitkat" />
   <project path="frameworks/av" name="android_frameworks_av" remote="aosb" revision="kitkat" />
   <project path="frameworks/base" name="android_frameworks_base" remote="aosb" revision="kitkat"  />
