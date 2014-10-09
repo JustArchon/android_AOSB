@@ -25,13 +25,16 @@
   <remote name="sm-bb"
           fetch="https://bitbucket.org/SaberTeam" />
 
+ <remote  name="sd"
+          fetch="https://github.com/SaberDroid" />
+
   <default revision="refs/heads/cm-11.0"
            remote="cm"
            sync-c="true"
            sync-j="4" />
 
   <!-- Android Open Source BAM Start -->
-  <project path="build" name="android_build" remote="aosb" revision="kitkat" >
+  <project path="build" name="android_build" remote="aosb" revision="kitkat-staging" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -179,7 +182,7 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" groups="pdk" />
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" groups="pdk" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" groups="pdk,tools" />
+  <project path="prebuilts/tools" name="prebuilts_tools" remote="sd" revision="kitkat" groups="pdk,tools" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
@@ -202,7 +205,7 @@
   <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="android_bootable_recovery" />
   <project path="bootable/recovery-cm" name="android_bootable_recovery-cm" />
-  <project path="dalvik" name="android_dalvik" />
+  <project path="dalvik" name="dalvik" remote="sd" revision="kitkat" />
   <project path="development" name="android_development" />
   <project path="device/common" name="android_device_common" />
   <project path="device/generic/armv7-a-neon" name="android_device_generic_armv7-a-neon" groups="pdk" />
@@ -227,7 +230,7 @@
   <project path="external/apache-qp" name="android_external_apache-qp" />
   <project path="external/apache-xml" name="android_external_apache-xml" />
   <project path="external/arduino" name="android_external_arduino" />
-  <project path="external/bash" name="android_external_bash" />
+  <project path="external/bash" name="android_external_bash" remote="sm" revision="kitkat" />
   <project path="external/bison" name="android_external_bison" groups="pdk" />
   <project path="external/blktrace" name="android_external_blktrace" />
   <project path="external/libtar" name="android_external_libtar" />
@@ -241,7 +244,7 @@
   <project path="external/chromium" name="android_external_chromium" />
   <project path="external/chromium-trace" name="android_external_chromium-trace" groups="pdk" />
   <project path="external/chromium_org" name="android_external_chromium_org" />
-  <project path="external/clang" name="android_external_clang" groups="pdk" />
+  <project path="external/clang" name="external_clang" remote="sd" revision="kitkat" groups="pdk" />
   <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" />
   <project path="external/connectivity" name="android_external_connectivity" />
   <project path="external/crda" name="android_external_crda" />
@@ -424,8 +427,8 @@
   <project path="frameworks/opt/telephony-msim" name="android_frameworks_opt_telephony-msim" />
   <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" />
-  <project path="frameworks/support" name="android_frameworks_support" />
+  <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="sd" revision="kitkat" />
+  <project path="frameworks/support" name="frameworks_support" remote="sd" revision="kitkat" />
   <project path="frameworks/testing" name="android_frameworks_testing" />
   <project path="frameworks/volley" name="android_frameworks_volley" />
   <project path="frameworks/webview" name="android_frameworks_webview" />
