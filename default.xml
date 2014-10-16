@@ -427,7 +427,7 @@
   <project path="frameworks/opt/telephony-msim" name="android_frameworks_opt_telephony-msim" />
   <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="sd" revision="kitkat" />
+  <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="sd" revision="cm-11.0" />
   <project path="frameworks/support" name="frameworks_support" remote="sd" revision="kitkat" />
   <project path="frameworks/testing" name="android_frameworks_testing" />
   <project path="frameworks/volley" name="android_frameworks_volley" />
