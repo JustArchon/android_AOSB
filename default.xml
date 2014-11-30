@@ -25,9 +25,10 @@
   </project>
 
   <!-- Android Open Source BAM Start -->
-  <project path="android" name="AOSB/android" revision="android-5.0"/>
-  <project path="vendor/cm" name="AOSB/android_vendor_cm" revision="android-5.0"/>
-  <project path="frameworks/base" name="AOSB/android_frameworks_base" revision="android-5.0"/>
+  <project path="android" name="AOSB/android" revision="android-5.0" />
+  <project path="vendor/cm" name="AOSB/android_vendor_cm" revision="android-5.0" />
+  <project path="frameworks/base" name="AOSB/android_frameworks_base" revision="android-5.0" />
+  <project path="packages/apps/Settings" name="AOSB/android_packages_apps_Settings" revision="android-5.0" />
   <!-- Android Open Source BAM End -->
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
@@ -447,7 +448,6 @@
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
