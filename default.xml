@@ -24,9 +24,12 @@
   <remote  name="AOSB"
            fetch="https://github.com/AOSB" />
 
+  <remote  name="JustAkan"
+           fetch="https://github.com/JustAkan" />
+
 
   <!-- Android Open Source Blitz Start -->
-  <project path="build" name="android_build" remote="AOSB" revision="master" >
+  <project path="build" name="android_build_AOSB" remote="JustAkan" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
